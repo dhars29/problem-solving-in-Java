@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s= new Scanner(System.in);
+        int c1 = s.nextInt();
+        int q1 = s.nextInt();
+        int c2 = s.nextInt();
+        int q2 = s.nextInt();
+        int c3 = s.nextInt();
+        int q3 = s.nextInt();
+        int budget= s.nextInt();
+        
+        float bt = (c1*q1)+(c2*q2)+(c3*q3);
+        float t = bt*10/100;
+        float at = bt+t;
+        
+        System.out.printf("Total (Before Tax): %.2f",bt);
+         System.out.printf ("\nTotal (After Tax): %.2f",at);  
+        
+        if (at<budget){
+            System.out.println("\nWithin Budget");
+        }else{
+            System.out.println("\nOver Budget");
+        }
+        
+    }
+}
