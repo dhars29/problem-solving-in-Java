@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        char a= s.next().charAt(0);
+        if(97<=a && a<=122){
+            System.out.println("Lowercase Alphabet");
+        }
+        else if(65<=a && a<=90){
+            System.out.println("Uppercase Alphabet");
+        }
+        else if(48<=a  && a<=57){
+            System.out.println("Digit");
+        }
+        else{
+            System.out.println("Special Character");
+        }
+    }
+}
