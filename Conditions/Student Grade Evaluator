@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s= new Scanner(System.in);
+        int g = s.nextInt();
+       
+        if(90<=g && g<=100){
+            System.out.println("Grade A");
+        }
+        else if(80<=g && g<=89){
+            System.out.println("Grade B");
+        }
+        else if(70<=g && g<=79){
+            System.out.println("Grade C");
+        }
+        else if(60<=g && g<=69){
+            System.out.println("Grade D");
+        }
+        else if(50<=g && g<=59){
+            System.out.println("Grade E");
+        }
+        else{
+            System.out.println("Fail");
+        }
+        
+        s.close();
+    }
+}
